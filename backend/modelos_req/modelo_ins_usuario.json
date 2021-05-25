@@ -1,0 +1,6 @@
+{
+    "nome_usuario": "string",
+    "codigo_usuario": "string",
+    "periodo_trabalho": "string",
+    "setor": "string"
+}

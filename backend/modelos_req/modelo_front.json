@@ -1,0 +1,9 @@
+{
+    "id_usuario": 1,
+    "token_usuario": "joao",
+    "datetime": "datetime",
+    "requisicao": {
+        "grupo": "usuario",
+        "funcao": "buscartodos"
+    }
+}
