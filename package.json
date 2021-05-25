@@ -1,0 +1,25 @@
+{
+  "name": "dashdev",
+  "version": "1.0.0",
+  "description": "Dashboard Analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jootiinha/DashDev.git"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "João",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jootiinha/DashDev/issues"
+  },
+  "homepage": "https://github.com/Jootiinha/DashDev#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
