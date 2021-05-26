@@ -43,6 +43,41 @@ app.post('/usuario/buscartodos', function(req, res){
     return res.send(retorno);
 });
 
+
+
+
+app.post('/usuario/cadastrar', function(req, res){
+
+    res.setHeader('Content-Type', 'application/json');
+    var retorno = JSON.stringify
+
+    console.log("Executando função");
+
+
+    if (req.body.idade >=18){
+            retorno = JSON.stringify({
+            "status": true,
+            "mensagem": "Dado inserido com sucesso",
+            "datetime": datetime,
+            "nome_usuario": req.body.nome_usuario,
+            "idade": req.body.idade
+        });
+    }
+
+    else {
+            retorno = JSON.stringify({
+            "status": true,
+            "mensagem": "Erro ao cadastrar usuário",
+            "datetime": datetime,
+            "nome_usuario": req.body.nome_usuario,
+            "idade": req.body.idade
+        });
+    }
+
+    return res.send(retorno);
+
+});
+
 /*
 Modelo retorno insert SUCESSO
 {
