@@ -1,0 +1,11 @@
+{
+    "id_usuario": 1,
+    "token_usuario": "joao",
+    "datetime": "datetime",
+    "requisicao": {
+        "grupo": "data",
+        "subgrupo": "analytics",
+        "tipo_query": "total",
+        "query": "localizador_reserva_frigobar"
+    }
+}

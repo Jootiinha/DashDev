@@ -31,7 +31,27 @@
         <!-- Final: Navbar -->
 
         <div class="container">
-            <p> Elementos do Javascript</p>
+            <div class="row"><p> Resultado consulta SELECT</p></div>
+            <div class="row">
+                <button type="button" id="btnConsutlaDados" name="btnConsutlaDados" class="btn btn-dark">Dark</button>
+            </div>
+            <div class="row">
+                <!-- Resultado da consultado do select -->
+                <table class="table" id="tabelaResultado" name="tabelaResultado">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Localizador</th>
+                        <th scope="col">Total reserva</th>
+                        <th scope="col">Total frigobar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
 
 
@@ -40,7 +60,9 @@
 
 
 
+
         <!-- Carregando arquivos JS -->
+        <script src="js/consultas.js"></script>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
