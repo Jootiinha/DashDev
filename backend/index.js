@@ -13,6 +13,34 @@ app.use(express.json());
 var datetime = new Date();
 
 
+function exec_query(body){
+
+    var retorno = '';
+
+    if(body.requisicao.grupo == 'data'){        
+
+        retorno = JSON.stringify({
+            "status": true,
+            "mensagem": "Consulta realizada com sucesso.",
+            "data": [
+                {
+                    "localizador": "aaa",
+                    "total_vendas": 123.65,
+                    "total_frigobar": 852.66
+                },
+                {
+                    "localizador": "bbb",
+                    "total_vendas": 987.65,
+                    "total_frigobar": 96878.66
+                }
+            ]
+        })
+    }
+    
+    return retorno;
+}
+
+
 //Quando o usuário faz a requisição GET para a URL base retorna o json abaixo
 app.get('/', function(req, res){
    
@@ -24,6 +52,13 @@ app.get('/', function(req, res){
         "datetime": datetime
     });
     return res.send(retorno);
+});
+
+
+app.post('/data/analytics', function(req, res){
+    res.setHeader('Content-Type', 'application/json');
+    console.log("Chamou a função");
+    return res.send(exec_query(req.body)); 
 })
 
 
@@ -42,9 +77,6 @@ app.post('/usuario/buscartodos', function(req, res){
     });
     return res.send(retorno);
 });
-
-
-
 
 app.post('/usuario/cadastrar', function(req, res){
 
@@ -96,14 +128,5 @@ Modelo retorno insert INSUCESSO
     "codigo_usuario": <codigo gerado>,
 }
 */
-
-
-
-
-
-
-
-
-
 
 app.listen(process.env.PORT || 8080)
