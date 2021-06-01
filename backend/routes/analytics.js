@@ -6,10 +6,8 @@ router = express.Router();
 
 router.post('/totais', function(req, res){
     res.setHeader('Content-Type', 'application/json');
-
-
     console.log("O frontend chamou essa função do backend")
-    console.log(req.body.datetime);
+
     
     var query = 'SELECT * FROM teste limit 20;';
     var retorno = '';
