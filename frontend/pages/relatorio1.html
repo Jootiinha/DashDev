@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>DashDev</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!-- Inicio: Navbar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">DashDev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Usuários</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Unidades</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Final: Navbar -->
+
+        <div class="container">
+            <div class="row"><p> Resultado consulta SELECT</p></div>
+            <div class="row">
+                <button type="button" id="btnConsutlaDados" name="btnConsutlaDados" class="btn btn-dark">Dark</button>
+            </div>
+            <div class="row">
+                <!-- Resultado da consultado do select -->
+                <table class="table" id="tabelaResultado" name="tabelaResultado">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Localizador</th>
+                        <th scope="col">Total reserva</th>
+                        <th scope="col">Total frigobar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Carregando arquivos JS -->
+        <script src="js/consultas.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+</html>
