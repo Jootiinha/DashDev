@@ -15,7 +15,21 @@ app.use(cors())
 
 
 //Carregando as rotas no servidor WEB
-app.use('/data', analyticsRoute);
+app.use('/login', analyticsRoute);
+
+
+//Requisição de login
+app.get('/login', function(req, res){
+    res.setHeader('Content-Type', 'application/json');
+    var datetime = new Date();
+    var retorno = JSON.stringify({
+        "status": true,
+        "mensagem": "Usuário logado com sucesso",
+        "datetime": datetime
+    });
+    return res.send(retorno);
+});
+
 
 //Quando o usuário faz a requisição GET para a URL base retorna o json abaixo
 app.get('/', function(req, res){
