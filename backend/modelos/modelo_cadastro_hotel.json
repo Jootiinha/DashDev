@@ -1,0 +1,22 @@
+{
+    "nome_hotel": null,
+    "endereco_hotel": {
+        "id_endereco": null,
+        "cidade": null,
+        "estado": null,
+        "cep": null,
+        "endereco_completo": null,
+        "pais": null
+    },
+    "responsavel_hotel": "tem que ser id do usuário",
+    "data_de_cadastro": null,
+    "tipo_servico_contratado": null,
+    "quantidade_quartos": null,
+    "quantidade_funcionarios": null,
+    "contatos": {
+        "id_contato": null,
+        "telefone": null,
+        "celular": null,
+        "email": null
+    }
+}
