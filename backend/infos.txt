@@ -1,0 +1,31 @@
+Hotel:
+    Endereço (completo)
+    Quantidade de quartos
+    Tarifa base
+    Histórico tarifário --> (yyyymmdd; tarifa; ocupação)
+    URLS Sites turismo -->( booking, decolar, 123milhas)
+    Possui frigobar, se sim, tabela de faturamento frigobar (yyyymmdd)
+    total funcionarios,
+    serviços ofericidos, se sim, tabela com faturamento descritivo
+
+Perfil_dono_hotel:
+    nome,
+    cpf,
+    cargo_hotel
+    endereco,
+    contato (emil, whatsapp, etc..)
+
+
+Log:
+
+Usuários:
+    login,
+    senha,
+    email
+    telefone
+
+token:
+    id_usuario
+    token
+    data_criacao
+    data_expiracao
